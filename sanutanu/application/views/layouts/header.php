@@ -109,3 +109,6 @@
       </nav>
     </header>
     <!--Header End-->
+     <!-- Scripts
+    ================================================= -->
+<input type="hidden"id="base_url" value="<?php echo base_url(); ?>">
