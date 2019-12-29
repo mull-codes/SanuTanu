@@ -70,7 +70,7 @@ body{
     src: url("../fonts/agency-fb.ttf") /* TTF file for CSS3 browsers */
 }
 
-h1, h2, h3, h4, h5, h6{color: #27aae1;}
+h1, h2, h3, h4, h5, h6{color: rgb(164, 27, 227);}
 
 h1.grey, h2.grey, h3.grey, h4.grey, h5.grey, h6.grey{
   color: #6d6e71;
@@ -93,9 +93,9 @@ h1.grey, h2.grey, h3.grey, h4.grey, h5.grey, h6.grey{
 
 .text-muted{color: #939598;}
 
-a{color: #27aae1;}
+a{color: rgb(164, 27, 227);}
 
-a:hover{color: #149AC9;}
+a:hover{color: rgb(164, 27, 227);}
 
 a, a:active, a:focus {outline: none;}
 
@@ -151,7 +151,7 @@ section .wrapper{
 }
 
 .btn-primary{
-	background: #27aae1;
+	background: rgb(164, 27, 227);
 	padding: 7px 25px;
 	border: none;
 	font-size: 14px;
@@ -164,7 +164,7 @@ section .wrapper{
 }
 
 .btn-primary:hover{
-  background: #149AC9;
+  background: rgb(57, 2, 73);
   transition: all 1s;
 }
 
@@ -314,7 +314,6 @@ textarea{
 .panel-default{
   border-color: #f1f2f2;
 }
-  
 .panel-default>.panel-heading{
   color: #333;
   background-color: #fff;
@@ -345,7 +344,7 @@ textarea{
   border-top-color: #f1f2f2;
 }
 
-.panel-group .panel-heading+.panel-collapse>.list-group, 
+.panel-group .panel-heading+.panel-collapse>.list-group,
 .panel-group .panel-heading+.panel-collapse>.panel-body{
   border-top: 1px solid #f1f2f2;
 }
@@ -468,7 +467,7 @@ textarea{
 /*Transparent Background Header for Landing Page-2*/
 
 #header-inverse nav.menu{
-  background: transparent;
+ 
   margin-top: 15px;
   z-index: 1030;
 }
@@ -816,21 +815,25 @@ textarea{
 
 /*==================================================
   Landing Page: V2 | Register/Login
-  ==================================================*/  
-
+  ==================================================*/
+	a:active {
+    color: blue;
+}
 #lp-register{
-  background: linear-gradient(to right, rgba(0,0,0, 0.7) , rgba(0,0,0, 0.7)), url("http://placehold.it/1920x1280") fixed no-repeat;
+   background: linear-gradient(to right, rgba(133, 106, 130, 0.7) , rgba(133, 105, 126, 0.7)),url("../images/images9.jpg") fixed no-repeat;
   background-size: cover;
   background-position: center;
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 100vh;
+	min-height: 100vh;
+	/* background: url("../images/images9.jpg") fixed no-repeat; */
 }
 
 #lp-register .wrapper{
-  padding-top: 140px;
-  padding-bottom: 140px;
+	/* padding-top: 140px; */
+	padding-top: 100px;
+  /* padding-bottom: 140px; */
 }
 
 .intro-texts{
@@ -927,7 +930,7 @@ textarea{
 
 .reg-form-container .nav-tabs > li::after{
   content: "";
-  background: rgba(255,255,255, 0.1);
+  background: #939598;;
   height: 25px;
   width: 1px;
   position: absolute;
@@ -941,7 +944,7 @@ textarea{
 
 .reg-form-container .nav-tabs > li > a{
   background: transparent;
-  color: #939598;
+  color: #4c165a;
   padding: 5px 30px;
   min-width: 120px;
   border-radius: 30px;
@@ -951,8 +954,8 @@ textarea{
   border: none;
 }
 
-.reg-form-container .nav-tabs > li.active > a, 
-.reg-form-container .nav-tabs > li.active > a:focus, 
+.reg-form-container .nav-tabs > li.active > a,
+.reg-form-container .nav-tabs > li.active > a:focus,
 .reg-form-container .nav-tabs > li.active > a:hover{
   background: transparent;
   color: #fff;

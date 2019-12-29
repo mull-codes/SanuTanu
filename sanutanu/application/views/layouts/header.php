@@ -14,10 +14,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/ionicons.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
-    
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="assets/images/fav.png"/>
   </head>
@@ -26,7 +24,7 @@
     <!-- Header
     ================================================= -->
     <header id="header-inverse">
-      <nav class="navbar navbar-default navbar-fixed-top menu">
+      <nav class="navbar navbar-default navbar-fixed-top menu" style="margin-top: 0%;">
         <div class="container">
 
           <!-- Brand and toggle get grouped for better mobile display -->
@@ -44,14 +42,16 @@
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right main-menu">
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" onMouseOver="this.style.color='rgb(164, 27, 227)'"
+   onMouseOut="this.style.color='#ffffff'" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                 <ul class="dropdown-menu newsfeed-home">
                   <li><a href="index.html">Landing Page 1</a></li>
                   <li><a href="index-register.html">Landing Page 2</a></li>
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+							<!-- <span><img src="assets/images/down-arrow.png" alt="" /></span>  -->
+							<a href="#" class="dropdown-toggle" onMouseOut="this.style.color='#ffffff'"onMouseOver="this.style.color='rgb(164, 27, 227)'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed </a>
                 <ul class="dropdown-menu newsfeed-home">
                   <li><a href="newsfeed.html">Newsfeed</a></li>
                   <li><a href="newsfeed-people-nearby.html">Poeple Nearly</a></li>
@@ -62,7 +62,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+                <a href="#" class="dropdown-toggle" onMouseOut="this.style.color='#ffffff'" onMouseOver="this.style.color='rgb(164, 27, 227)'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Timeline</a>
                 <ul class="dropdown-menu login">
                   <li><a href="timeline.html">Timeline</a></li>
                   <li><a href="timeline-about.html">Timeline About</a></li>
@@ -76,7 +76,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-                <a href="#" class="dropdown-toggle pages" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Pages <span><img src="assets/images/down-arrow.png" alt="" /></span></a>
+                <a href="#" class="dropdown-toggle pages"onMouseOut="this.style.color='#ffffff'" onMouseOver="this.style.color='rgb(164, 27, 227)'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">All Pages</a>
                 <ul class="dropdown-menu page-list">
                   <li><a href="index.html">Landing Page 1</a></li>
                   <li><a href="index-register.html">Landing Page 2</a></li>
@@ -96,7 +96,7 @@
                   <li><a href="404.html">404 Not Found</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="contact.html">Contact</a></li>
+              <li class="dropdown"><a href="contact.html"onMouseOut="this.style.color='#ffffff'" onMouseOver="this.style.color='rgb(164, 27, 227)'" >Contact</a></li>
             </ul>
             <form class="navbar-form navbar-right hidden-sm">
               <div class="form-group">
