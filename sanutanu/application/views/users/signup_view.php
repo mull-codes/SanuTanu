@@ -33,30 +33,30 @@
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
-                        <input id="user_first_name" class="form-control input-group-lg" type="text" name="user_first_name" title="Enter first name" placeholder="First name"/>
+                        <input id="user_first_name" class="form-control input-group-lg" type="text" name="user_first_name"  placeholder="First name"  data="popover" data-content="What's your name?"/>
                       </div>
                       <div class="form-group col-xs-6">
                         <label for="lastname" class="sr-only">Last Name</label>
-                        <input id="user_last_name" class="form-control input-group-lg" type="text" name="user_last_name" title="Enter last name" placeholder="Last name"/>
+                        <input id="user_last_name" class="form-control input-group-lg" type="text" name="user_last_name" placeholder="Last name" data="popover" data-content="What's your last name?"/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
-                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" title="Enter Email" placeholder="Your Email"/>
+                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data="popover" data-content="What's your email?" placeholder="Your Email"/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="password" class="sr-only">Password</label>
-                        <input id="user_password" class="form-control input-group-lg" type="password" name="user_password" title="Enter password" placeholder="Password"/>
+                        <input id="user_password" class="form-control input-group-lg" type="password" name="user_password" data="popover" data-content="Write your password at least 8 characters?" placeholder="Password"/>
                       </div>
                     </div>
                     <div class="row">
                       <p class="birth"><strong>Date of Birth</strong></p>
                       <div class="form-group col-sm-3 col-xs-6">
                         <label for="month" class="sr-only"></label>
-                        <select class="form-control" id="day" name="day">
+                        <select class="form-control" id="day" name="day" data="popover" data-content="Select day">
                           <option value="Day" disabled selected>Day</option>
                           <option>1</option>
                           <option>2</option>
@@ -93,25 +93,25 @@
                       </div>
                       <div class="form-group col-sm-3 col-xs-6">
                         <label for="month" class="sr-only"></label>
-                        <select class="form-control" id="month" name="month">
+                        <select class="form-control" id="month" name="month" data="popover" data-content="Select month">
                           <option value="month" disabled selected>Month</option>
-                          <option>Jan</option>
-                          <option>Feb</option>
-                          <option>Mar</option>
-                          <option>Apr</option>
-                          <option>May</option>
-                          <option>Jun</option>
-                          <option>Jul</option>
-                          <option>Aug</option>
-                          <option>Sep</option>
-                          <option>Oct</option>
-                          <option>Nov</option>
-                          <option>Dec</option>
+                          <option value="1">Jan</option>
+                          <option value="2">Feb</option>
+                          <option value="3">Mar</option>
+                          <option value="4">Apr</option>
+                          <option value="5">May</option>
+                          <option value="6">Jun</option>
+                          <option value="7">Jul</option>
+                          <option value="8">Aug</option>
+                          <option value="9">Sep</option>
+                          <option value="10">Oct</option>
+                          <option value="11">Nov</option>
+                          <option value="12">Dec</option>
                         </select>
                       </div>
                       <div class="form-group col-sm-6 col-xs-12">
                         <label for="year" class="sr-only"></label>
-                        <select class="form-control" id="year" name="year">
+                        <select class="form-control" id="year" name="year"  data="popover" data-content="Select year">
                           <option value="year" disabled selected>Year</option>
                           <option>2000</option>
                           <option>2001</option>
@@ -202,6 +202,7 @@
     <!-- Custome Fiels  -->
     <script src="assets/resources/custom.js"></script>
     <script src="assets/resources/js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="assets/resources/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
   </body>
 </html>
  
