@@ -45,10 +45,10 @@
 ==================================================*/
  .popover{
   width:183px;
-  background: rgb(163, 138, 158);
+  background: #a38a9e6e;
   text-align: center;
     text-decoration: none;
-  color:white;
+  color:#fff;
 }
 html, body {
   height: 100%;

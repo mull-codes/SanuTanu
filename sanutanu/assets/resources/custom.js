@@ -7,6 +7,37 @@ function registeration_submit(id){
 	}
 }
 
+ $("ul#list1").on('click',function(){
+debugger;
+var id =$("#list1 li.active").attr('id');
+
+if(id=="register1")
+{
+	document.getElementById('user_first_name').style.borderColor='';
+         	    		$('#user_first_name').popover("hide");
+    document.getElementById('user_last_name').style.borderColor='';
+         	    		$('#user_last_name').popover("hide");
+    document.getElementById('user_email').style.borderColor='';
+         	    		$('#user_email').popover("hide");
+    document.getElementById('user_password').style.borderColor='';
+         	    		$('#user_password').popover("hide"); 
+    document.getElementById('day').style.borderColor='';
+	document.getElementById('month').style.borderColor='';
+	document.getElementById('year').style.borderColor='';    	    		     	    		
+	$('#day').popover("hide");$('#month').popover("hide");
+	$('#year').popover("hide");
+}else if(id=="login1")
+{
+	document.getElementById('user_email_Login').style.borderColor='';
+         	    		$('#user_email_Login').popover("hide");
+    document.getElementById('user_password_Log').style.borderColor='';
+         	    		$('#user_password_Log').popover("hide");
+}
+
+ });
+
+
+  
 function Form_validations(F_data)
 {
 	debugger;

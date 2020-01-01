@@ -15,9 +15,9 @@
             <div class="reg-form-container">
               <!-- Register/Login Tabs-->
               <div class="reg-options">
-                <ul class="nav nav-tabs">
-                  <li ><a href="#register"  data-toggle="tab" >Register</a></li>
-                  <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
+                <ul class="nav nav-tabs" id="list1">
+                  <li id="register1" ><a href="#register"  data-toggle="tab" >Register</a></li>
+                  <li class="active" id="login1"><a href="#login" data-toggle="tab">Login</a></li>
                 </ul><!--Tabs End-->
               </div>
               <!--Registration Form Contents-->
@@ -30,23 +30,23 @@
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
-                        <input id="user_first_name" data="popover" oninput="Remove_Validations()" onfocusout="Form_validations(this)" class="form-control input-group-lg " type="text" name="user_first_name"  placeholder="First name"data-container="body" data-toggle="popover" data-placement="left" data-content="invalid name."/>
+                        <input id="user_first_name" data="popover" oninput="Remove_Validations()" onfocusout="Form_validations(this)" class="form-control input-group-lg " type="text" name="user_first_name"  placeholder="First name"data-container="body" data-toggle="popover" data-placement="left" data-content="Your First Name."/>
                       </div>
                       <div class="form-group col-xs-6">
                         <label for="lastname" class="sr-only">Last Name</label>
-                       <input id="user_last_name" data="popover" oninput="Remove_Validations()" class="form-control input-group-lg" onfocusout="Form_validations(this)" type="text" data-content="What's your email?" name="user_last_name" placeholder="Last name" data-container="body" data-toggle="popover" data-placement="top" data-content="invalid name."/>
+                       <input id="user_last_name" data="popover" oninput="Remove_Validations()" class="form-control input-group-lg" onfocusout="Form_validations(this)" type="text"  name="user_last_name" placeholder="Last name" data-container="body" data-toggle="popover" data-placement="top" data-content="Your Last Name."/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
-                         <input id="user_email" oninput="Remove_Validations()" class="form-control input-group-lg" onfocusout="Form_validations(this)" type="text" name="user_email" data="popover" data-content="What's your email?" placeholder="Your Email" data-container="body" data-toggle="popover" data-placement="left" data-content="invalid name."/>
+                         <input id="user_email" oninput="Remove_Validations()" class="form-control input-group-lg" onfocusout="Form_validations(this)" type="text" name="user_email" data="popover" data-content="What's your email?" placeholder="Your Email" data-container="body" data-toggle="popover" data-placement="right" data-content="invalid name."/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="password" class="sr-only">Password</label>
-                       <input id="user_password" oninput="Remove_Validations()" onfocusout="Form_validations(this)" class="form-control  input-group-lg" type="password" name="user_password"  data-container="body" data-toggle="popover" data-placement="right"  data="popover" data-content="Password at least 8 characters?" placeholder="Password"/>
+                       <input id="user_password" oninput="Remove_Validations()" onfocusout="Form_validations(this)" class="form-control  input-group-lg" type="password" name="user_password"  data-container="body" data-toggle="popover" data-placement="left"  data="popover" data-content="Password at least 8 characters?" placeholder="Password"/>
                       </div>
                     </div>
                     <div class="row">
@@ -108,7 +108,7 @@
                       </div>
                       <div class="form-group col-sm-6 col-xs-12">
                         <label for="year" class="sr-only"></label>
-                        <select oninput="Remove_Validations()" class="form-control" id="year" name="year"  data="popover" data-content="Select year">
+                        <select oninput="Remove_Validations()" class="form-control" id="year" name="year" data-placement="bottom"  data="popover" data-content="Select year">
                           <option value="year" disabled selected>Year</option>
                           <option>2000</option>
                           <option>2001</option>
@@ -137,7 +137,7 @@
                       </label>
                     </div>
                   </form><!--Register Now Form Ends-->
-                  <p><a href="#">Already have an account?</a></p>
+                  <p><a href="#login">Already have an account?</a></p>
                   <button class="btn btn-primary" id="submit" onclick="registeration_submit('registration_form')">Register Now</button>
                 </div><!--Registration Form Contents Ends-->
                 <div class="tab-pane active" id="login">
@@ -154,7 +154,7 @@
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="password" class="sr-only">Password</label>
-                       <input id="user_password_Log" onfocusout="Form_validations(this)" class="form-control  input-group-lg" oninput="Remove_Validations()" type="password" name="user_password"  data-container="body" data-toggle="popover" data-placement="right"  data="popover" data-content="Password at least 8 characters?" placeholder="Password"/>
+                       <input id="user_password_Log" onfocusout="Form_validations(this)" class="form-control  input-group-lg" oninput="Remove_Validations()" type="password" name="user_password"  data-container="body" data-toggle="popover" data-placement="left"  data="popover" data-content="Password at least 8 characters?" placeholder="Password"/>
                       </div>
                     </div>
                   </form><!--Login Form Ends--> 
