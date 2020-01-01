@@ -29,7 +29,8 @@ if(InputName=="user_first_name")
          else if(!(InputValue.match(Name_RXP)))
          	    {
          	    		document.getElementById('user_first_name').style.borderColor='red';
-         	    		$('#user_first_name').popover();
+         	    		$('#user_first_name').popover('enable');
+	                     $('#user_first_name').popover('show');
          	    } 
          	    else 
          	    {
@@ -43,13 +44,16 @@ if(InputName=="user_first_name")
   	        if((InputValue==null || InputValue==""))
                      {
        	document.getElementById('user_last_name').style.borderColor='red';
-	 $('#user_last_name').popover();
+	 $('#user_last_name').popover('enable');
+	 $('#user_last_name').popover('show');
 	      return false;
                      }
          else if(!(InputValue.match(Name_RXP)))
          	    {
          	    		document.getElementById('user_last_name').style.borderColor='red';
-         	    		$('#user_last_name').popover();
+         	    		$('#user_last_name').popover('enable');
+	                    $('#user_last_name').popover('show');
+	      return false;
          	    }
          	    else 
          	    {
@@ -64,13 +68,15 @@ if(InputName=="user_first_name")
      	if((InputValue==null || InputValue==""))
                      {
        	document.getElementById('user_email_Login').style.borderColor='red';
-	 $('#user_email_Login').popover();
+	                    $('#user_email_Login').popover('enable');
+	                    $('#user_last_name').popover('show');
 	      return false;
                      }
                      else if(!(InputValue.match(Email_RXP)))
                              {
                              	document.getElementById('user_email_Login').style.borderColor='red';
-	                             $('#user_email_Login').popover();
+	                             $('#user_email_Login').popover('enable');
+	                             $('#user_last_name').popover('show');
                              }else 
          	    {
          	    	document.getElementById('user_email_Login').style.borderColor='';
@@ -82,13 +88,15 @@ if(InputName=="user_first_name")
 if((InputValue==null || InputValue==""))
                      {
        	document.getElementById('user_email').style.borderColor='red';
-	 $('#user_email').popover();
+	                    $('#user_email').popover('enable');
+	                    $('#user_email').popover('show');
 	      return false;
                      }
                      else if(!(InputValue.match(Email_RXP)))
                              {
                              	document.getElementById('user_email').style.borderColor='red';
-	                             $('#user_email').popover();
+	                              $('#user_email').popover('enable');
+	                              $('#user_email').popover('show');
                              }else 
          	    {
          	    	document.getElementById('user_email').style.borderColor='';
@@ -103,12 +111,14 @@ if((InputValue==null || InputValue==""))
        	if((InputValue==null || InputValue==""))
                      {
        	document.getElementById('user_password_Log').style.borderColor='red';
-	 $('#user_password_Log').popover();
+	                    $('#user_password_Log').popover('enable');
+	                    $('#user_password_Log').popover('show');
 	      return false;
                      }else if(!(InputValue.match(Password_rxp)) )
                      {
                      		document.getElementById('user_password_Log').style.borderColor='red';
-	                        $('#user_password_Log').popover();
+	                        $('#user_password_Log').popover('enable');
+	                    $('#user_password_Log').popover('show');
 	                             return false;
                      } 
          	    {
@@ -122,11 +132,14 @@ if((InputValue==null || InputValue==""))
        	if((InputValue==null || InputValue==""))
                      {
        	document.getElementById('user_password').style.borderColor='red';
-	 $('#user_password').popover();
+	                     $('#user_password').popover('enable');
+	                    $('#user_password').popover('show');
+
 	      return false;
                      }else if(!(InputValue.match(Password_rxp)) )
                      {
                      		document.getElementById('user_password').style.borderColor='red';
+	                         $('#user_password').popover();
 	                        $('#user_password').popover();
 	                             return false;
                      } 
