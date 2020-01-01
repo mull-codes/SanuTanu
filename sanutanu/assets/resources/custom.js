@@ -44,3 +44,15 @@ function ajaxSubmit(form_id,after_submit = ''){
 		}
 	});
 }
+
+function login_submit(form_id){
+	var form_action = $("#"+form_id).attr('action');
+	$.ajax({
+		type: "POST",
+		url: base_url+form_action,
+		data:$("#"+form_id).serialize(),
+		success:function(res){
+			//$("#"+form_id).trigger("reset");
+		}
+	});
+}

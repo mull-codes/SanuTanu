@@ -21,6 +21,18 @@ class Login extends CI_Controller {
 		// ini_set("smtp_port","465");
     }
 
+    public function user_login(){
+        $this->form_validation->set_rules('user_email', 'Email', 'trim|required|valid_email');
+        $this->form_validation->set_rules('user_password', 'Password', 'trim|required|min_length[8]');
+
+        if ($this->form_validation->run() != FALSE)
+        {
+            $this->registration->user_login();
+        }else{
+            echo validation_errors('<div class="error">', '</div>');
+        }
+    }
+
     public function save_registration(){
     	$this->form_validation->set_rules('user_first_name', 'First Name', 'trim|required|min_length[3]');
     	$this->form_validation->set_rules('user_last_name', 'Last Name', 'trim|required|min_length[3]');
@@ -30,7 +42,7 @@ class Login extends CI_Controller {
     	$this->form_validation->set_rules('month', 'Month', 'required');
     	$this->form_validation->set_rules('year', 'Year', 'required');
 
-    	 if ($this->form_validation->run() != FALSE)
+    	if ($this->form_validation->run() != FALSE)
         {
             $this->registration->save_registration();
         }else{

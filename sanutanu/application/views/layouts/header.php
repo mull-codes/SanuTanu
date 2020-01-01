@@ -10,16 +10,15 @@
 
     <!-- Stylesheets
     ================================================= -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/ionicons.min.css" />
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="assets/resources/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/ionicons.min.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/css/font-awesome.min.css" />
     
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
     <!--Favicon-->
-    <link rel="shortcut icon" type="image/png" href="assets/images/fav.png"/>
+    <link rel="shortcut icon" type="image/png" href="<?=base_url()?>assets/images/fav.png"/>
   </head>
   <body>
 
@@ -37,7 +36,7 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index-register.html"><img src="assets/images/logo.png" alt="logo" /></a>
+            <a class="navbar-brand" href="index-register.html"><img src="<?=base_url()?>assets/images/logo.png" alt="logo" /></a>
           </div>
 
           <!-- Collect the nav links, forms, and other content for toggling -->
@@ -52,7 +51,7 @@
                 </ul>
               </li>
               <li class="dropdown">
-							<!-- <span><img src="assets/images/down-arrow.png" alt="" /></span>  -->
+							<!-- <span><img src="<?=base_url()?>assets/images/down-arrow.png" alt="" /></span>  -->
 							<a href="#" class="dropdown-toggle" onMouseOut="this.style.color='#ffffff'"onMouseOver="this.style.color='rgb(164, 27, 227)'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Newsfeed </a>
                 <ul class="dropdown-menu newsfeed-home">
                   <li><a href="newsfeed.html">Newsfeed</a></li>
