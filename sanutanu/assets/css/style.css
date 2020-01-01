@@ -43,7 +43,13 @@
     - Scroll Down Arrow
     - Preloader
 ==================================================*/
-
+ .popover{
+  width:183px;
+  background: rgb(163, 138, 158);
+  text-align: center;
+    text-decoration: none;
+  color:white;
+}
 html, body {
   height: 100%;
   width: 100%;
