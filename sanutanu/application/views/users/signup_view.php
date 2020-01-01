@@ -16,17 +16,17 @@
               <!-- Register/Login Tabs-->
               <div class="reg-options">
                 <ul class="nav nav-tabs">
-                  <li class="active"><a href="#register"  data-toggle="tab" >Register</a></li>
-                  <li><a href="#login" data-toggle="tab">Login</a></li>
+                  <li ><a href="#register"  data-toggle="tab" >Register</a></li>
+                  <li class="active"><a href="#login" data-toggle="tab">Login</a></li>
                 </ul><!--Tabs End-->
               </div>
               <!--Registration Form Contents-->
               <div class="tab-content">
-                <div class="tab-pane active" id="register">
+                <div class="tab-pane" id="register">
                   <h3>Register Now !!!</h3>
                   <p class="text-muted">Be cool and join today. Meet millions</p>
                   <!--Register Form-->
-                  <form name="registration_form" id='registration_form' onsubmit="signup_validations()" class="form-inline" action="index.php/users/login/save_registration">
+                  <form name="registration_form" id='registration_form' method="post" class="form-inline" action="index.php/users/login/save_registration">
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
@@ -140,11 +140,11 @@
                   <p><a href="#">Already have an account?</a></p>
                   <button class="btn btn-primary" id="submit" onclick="registeration_submit('registration_form')">Register Now</button>
                 </div><!--Registration Form Contents Ends-->
-                <div class="tab-pane" id="login">
+                <div class="tab-pane active" id="login">
                   <h3>Login</h3>
                   <p class="text-muted">Log into your account</p>
                   <!--Login Form-->
-                  <form name="Login_form" id='Login_form'>
+                  <form name="login_form" id='login_form' action="index.php/users/login/user_login" method="post">
                      <div class="row">
                        <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
@@ -159,7 +159,7 @@
                     </div>
                   </form><!--Login Form Ends--> 
                   <p><a href="#">Forgot Password?</a></p>
-                  <button class="btn btn-primary" onclick="registeration_submit('Login_form')">Login Now</button>
+                  <button class="btn btn-primary" id="btn_login" onclick="login_submit('login_form')">Login Now</button>
                 </div>
               </div>
             </div>
@@ -187,16 +187,15 @@
     </div>
 
 
-    <script src="assets/js/jquery-3.1.1.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.appear.min.js"></script>
-    <script src="assets/js/jquery.incremental-counter.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="<?=base_url()?>assets/js/jquery-3.1.1.min.js"></script>
+    <script src="<?=base_url()?>assets/js/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>assets/js/jquery.appear.min.js"></script>
+    <script src="<?=base_url()?>assets/js/jquery.incremental-counter.js"></script>
+    <script src="<?=base_url()?>assets/js/script.js"></script>
 
     <!-- Custome Fiels  -->
-    <script src="assets/resources/custom.js"></script>
-    <script src="assets/resources/js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="assets/resources/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="<?=base_url()?>assets/resources/custom.js"></script>
+    <script src="<?=base_url()?>assets/resources/js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
   </body>
 </html>
  

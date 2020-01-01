@@ -9,6 +9,14 @@ class Home extends CI_Controller {
     }
 
     public function index(){
+    	//$this->load->view('users/signup_view');
+    	// $this->session->set_userdata("logged_in",FALSE);
+    	// if($this->session->userdata("logged_in" === FALSE)){
+    	 	redirect(base_url().'index.php/home/login');
+    	// }
+    }
+
+    public function login(){
     	$this->load->view('users/signup_view');
     }
 }
