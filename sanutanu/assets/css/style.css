@@ -164,7 +164,7 @@ section .wrapper{
 }
 
 .btn-primary:hover{
-  background: rgb(57, 2, 73);
+  background: rgb(100, 10, 73);
   transition: all 1s;
 }
 
