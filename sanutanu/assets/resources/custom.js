@@ -216,6 +216,7 @@ function ajaxSubmit(form_id,after_submit = ''){
 }
 
 function login_submit(form_id){
+	registeration_submit(id)
 	var form_action = $("#"+form_id).attr('action');
 	$.ajax({
 		type: "POST",
