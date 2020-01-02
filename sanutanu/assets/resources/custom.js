@@ -280,7 +280,10 @@ function login_submit(form_id){
 		url: base_url+form_action,
 		data:$("#"+form_id).serialize(),
 		success:function(res){
-			//$("#"+form_id).trigger("reset");
+			if(res == "success"){
+				$("#"+form_id).trigger("reset");
+				window.location.href = base_url+"index.php/home/login";
+			}
 		}
 	});
 }
