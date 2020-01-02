@@ -14,8 +14,6 @@
     <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/css/ionicons.min.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="<?=base_url()?>assets/css/intlInputPhone.min.css" />
-    <script src="<?=base_url()?>assets/js/jquery-3.4.1.min.js"></script>
     
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">

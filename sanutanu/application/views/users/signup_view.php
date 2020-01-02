@@ -30,24 +30,17 @@
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
-                        <input id="user_first_name" data="popover" oninput="Remove_Validations()" onfocusout="Form_validations(this)" class="form-control input-group-lg input " type="text" name="user_first_name"  placeholder="First name"data-container="body" data-toggle="popover" data-placement="left" data-content="Your First Name."/>
+                        <input id="user_first_name" data="popover" oninput="Remove_Validations()" onfocusout="Form_validations(this)" class="form-control input-group-lg " type="text" name="user_first_name"  placeholder="First name"data-container="body" data-toggle="popover" data-placement="left" data-content="Your First Name."/>
                       </div>
                       <div class="form-group col-xs-6">
                         <label for="lastname" class="sr-only">Last Name</label>
-                       <input id="user_last_name" data="popover" oninput="Remove_Validations()" class="form-control input-group-lg input" onfocusout="Form_validations(this)" type="text"  name="user_last_name" placeholder="Last name" data-container="body" data-toggle="popover" data-placement="top" data-content="Your Last Name."/>
+                       <input id="user_last_name" data="popover" oninput="Remove_Validations()" class="form-control input-group-lg" onfocusout="Form_validations(this)" type="text"  name="user_last_name" placeholder="Last name" data-container="body" data-toggle="popover" data-placement="top" data-content="Your Last Name."/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
-                         <input id="user_email" oninput="Remove_Validations()" class="form-control input-group-lg input" onfocusout="Form_validations(this)" type="text" name="user_email" data="popover" data-content="What's your email?" placeholder="Your Email" data-container="body" data-toggle="popover" data-placement="right" data-content="invalid name."/>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="form-group col-xs-12">
-                        <label for="User_PhoneNumber" class="sr-only">Phone Number</label>
-                       <div class="input-phone" id="User_PhoneNumber">
-                         </div>
+                         <input id="user_email" oninput="Remove_Validations()" class="form-control input-group-lg" onfocusout="Form_validations(this)" type="text" name="user_email" data="popover" data-content="What's your email?" placeholder="Your Email" data-container="body" data-toggle="popover" data-placement="right" data-content="invalid name."/>
                       </div>
                     </div>
                     <div class="row">
@@ -203,10 +196,6 @@
     <!-- Custome Fiels  -->
     <script src="<?=base_url()?>assets/resources/custom.js"></script>
     <script src="<?=base_url()?>assets/resources/js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
-    <script src="<?=base_url('assets/js/intlInputPhone.js');?>"></script>
-    <script>
-$('.input-phone').intlInputPhone({ preferred_country: ['pk', 'us', 'gb'] });
-    </script>
   </body>
 </html>
  
