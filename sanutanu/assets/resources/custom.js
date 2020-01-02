@@ -8,7 +8,6 @@ function registeration_submit(id){
 }
 
  $("ul#list1").on('click',function(){
-debugger;
 var id =$("#list1 li.active").attr('id');
 
 if(id=="register1")
@@ -40,7 +39,6 @@ if(id=="register1")
   
 function Form_validations(F_data)
 {
-	debugger;
 	var Password_rxp = /^(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
 	var Name_RXP = /^[a-zA-Z\s ]{3,50}$/;
 	var Email_RXP = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -185,7 +183,6 @@ if((InputValue==null || InputValue==""))
 }
 function Remove_Validations()
 {
-	debugger;
 	    document.getElementById('user_first_name').style.borderColor='';
 		document.getElementById('user_last_name').style.borderColor='';
 		document.getElementById('user_email').style.borderColor='';
@@ -247,14 +244,16 @@ function ajaxSubmit(form_id,after_submit = ''){
 }
 
 function login_submit(form_id){
-	registeration_submit(id)
 	var form_action = $("#"+form_id).attr('action');
 	$.ajax({
 		type: "POST",
 		url: base_url+form_action,
 		data:$("#"+form_id).serialize(),
 		success:function(res){
-			//$("#"+form_id).trigger("reset");
+			if(res == "success"){
+				$("#"+form_id).trigger("reset");
+				window.location.href = base_url+"index.php/home/login";
+			}
 		}
 	});
 }
