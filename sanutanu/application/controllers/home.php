@@ -9,20 +9,14 @@ class Home extends CI_Controller {
     }
 
     public function index(){
-    	if($this->session->userdata("logged_in") == "logged_in"){
-    	 	redirect(base_url().'index.php/home/login' , 'refresh');
-    	}
-    	$this->load->view('users/signup_view');	
+    	//$this->load->view('users/signup_view');
+    	// $this->session->set_userdata("logged_in",FALSE);
+    	// if($this->session->userdata("logged_in" === FALSE)){
+    	 	redirect(base_url().'index.php/home/login');
+    	// }
     }
 
     public function login(){
-    	if($this->session->userdata("logged_in") != "logged_in"){
-    	 	redirect(base_url().'index.php/home' , 'refresh');
-    	}
-    	$this->load->view('users/timeline_view');
-    	//$this->session->sess_destroy();
-    	
+    	$this->load->view('users/signup_view');
     }
-
-    
 }

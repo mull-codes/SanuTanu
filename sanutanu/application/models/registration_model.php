@@ -36,12 +36,11 @@ class Registration_Model extends CI_Model  {
                 ->where(array("user_email" => $user_email,"user_password" => $user_password));
         $user_data = $this->db->get()->result_array();
         if($user_data){
-            $this->session->set_userdata('logged_in',"logged_in");
+            $this->session->set_userdata('logged_in',TRUE);
             $this->session->set_userdata('first_name',$user_data[0]['user_first_name']);
             $this->session->set_userdata('last_name',$user_data[0]['user_last_name']);
             $this->session->set_userdata('date_of_birth',$user_data[0]['user_date_of_birth']);
             $this->session->set_userdata('gender',$user_data[0]['user_gender']);
-            echo "success";
         }else{
             echo "error";
         }
