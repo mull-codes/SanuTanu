@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/ionicons.min.css" />
     <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="assets/resources/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
     <!--Favicon-->
@@ -109,3 +111,6 @@
       </nav>
     </header>
     <!--Header End-->
+     <!-- Scripts
+    ================================================= -->
+<input type="hidden"id="base_url" value="<?php echo base_url(); ?>">
