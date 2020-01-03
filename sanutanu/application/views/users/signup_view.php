@@ -30,68 +30,72 @@
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
-                        <input id="user_first_name" class="form-control input-group-lg" type="text" name="user_first_name"  placeholder="First name"  data="popover" data-content="What's your name?"/>
+                        <input id="user_first_name" class="form-control input-group-lg" type="text" name="user_first_name"  placeholder="First name"  data-toggle="popover" data-content="What's your name?"/>
                       </div>
                       <div class="form-group col-xs-6">
                         <label for="lastname" class="sr-only">Last Name</label>
-                        <input id="user_last_name" class="form-control input-group-lg" type="text" name="user_last_name" placeholder="Last name" data="popover" data-content="What's your last name?"/>
+                        <input id="user_last_name" class="form-control input-group-lg" type="text" name="user_last_name" placeholder="Last name" data-toggle="popover" data-content="What's your last name?"/>
                       </div>
+                      <!-- <div class="form-group col-xs-12">
+                        <label for="phoneNo" class="sr-only">Mobile Number</label>
+                        <input id="user_phone" class="form-control input-group-lg" type="text" name="user_phone" placeholder="Mobile Number" data-toggle="popover" data-content="What's your mobile number?"/>
+                      </div> -->
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
-                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data="popover" data-content="What's your email?" placeholder="Your Email"/>
+                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data-toggle="popover" data-content="What's your email?" placeholder="Your Email"/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="password" class="sr-only">Password</label>
-                        <input id="user_password" class="form-control input-group-lg" type="password" name="user_password" data="popover" data-content="Write your password at least 8 characters?" placeholder="Password"/>
+                        <input id="user_password" class="form-control input-group-lg" type="password" name="user_password" data-toggle="popover" data-content="Please enter your 6 digits password" placeholder="Password"/>
                       </div>
                     </div>
                     <div class="row">
                       <p class="birth"><strong>Date of Birth</strong></p>
                       <div class="form-group col-sm-3 col-xs-6">
                         <label for="month" class="sr-only"></label>
-                        <select class="form-control" id="day" name="day" data="popover" data-content="Select day">
-                          <option value="Day" disabled selected>Day</option>
-                          <option>1</option>
-                          <option>2</option>
-                          <option>3</option>
-                          <option>4</option>
-                          <option>5</option>
-                          <option>6</option>
-                          <option>7</option>
-                          <option>8</option>
-                          <option>9</option>
-                          <option>10</option>
-                          <option>11</option>
-                          <option>12</option>
-                          <option>13</option>
-                          <option>14</option>
-                          <option>15</option>
-                          <option>16</option>
-                          <option>17</option>
-                          <option>18</option>
-                          <option>19</option>
-                          <option>20</option>
-                          <option>21</option>
-                          <option>22</option>
-                          <option>23</option>
-                          <option>24</option>
-                          <option>25</option>
-                          <option>26</option>
-                          <option>27</option>
-                          <option>28</option>
-                          <option>29</option>
-                          <option>30</option>
-                          <option>31</option>
+                        <select class="form-control" id="day" name="day">
+                          <option value="" disabled selected>Day</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                          <option value="10">10</option>
+                          <option value="11">11</option>
+                          <option value="12">12</option>
+                          <option value="13">13</option>
+                          <option value="14">14</option>
+                          <option value="15">15</option>
+                          <option value="16">16</option>
+                          <option value="17">17</option>
+                          <option value="18">18</option>
+                          <option value="19">19</option>
+                          <option value="20">20</option>
+                          <option value="21">21</option>
+                          <option value="22">22</option>
+                          <option value="23">23</option>
+                          <option value="24">24</option>
+                          <option value="25">25</option>
+                          <option value="26">26</option>
+                          <option value="27">27</option>
+                          <option value="28">28</option>
+                          <option value="29">29</option>
+                          <option value="30">30</option>
+                          <option value="30">31</option>
                         </select>
                       </div>
                       <div class="form-group col-sm-3 col-xs-6">
                         <label for="month" class="sr-only"></label>
-                        <select class="form-control" id="month" name="month" data="popover" data-content="Select month">
-                          <option value="month" disabled selected>Month</option>
+                        <select class="form-control" id="month" name="month">
+                          <option value="" disabled selected>Month</option>
                           <option value="1">Jan</option>
                           <option value="2">Feb</option>
                           <option value="3">Mar</option>
@@ -108,20 +112,20 @@
                       </div>
                       <div class="form-group col-sm-6 col-xs-12">
                         <label for="year" class="sr-only"></label>
-                        <select class="form-control" id="year" name="year"  data="popover" data-content="Select year">
-                          <option value="year" disabled selected>Year</option>
-                          <option>2000</option>
-                          <option>2001</option>
-                          <option>2002</option>
-                          <option>2004</option>
-                          <option>2005</option>
-                          <option>2006</option>
-                          <option>2007</option>
-                          <option>2008</option>
-                          <option>2009</option>
-                          <option>2010</option>
-                          <option>2011</option>
-                          <option>2012</option>
+                        <select class="form-control" id="year" name="year"  data-toggle="popover" data-content="What is your date of birth?">
+                          <option value="" disabled selected>Year</option>
+                          <option value="2000">2000</option>
+                          <option value="2001">2001</option>
+                          <option value="2002">2002</option>
+                          <option value="2004">2004</option>
+                          <option value="2005">2005</option>
+                          <option value="2006">2006</option>
+                          <option value="2007">2007</option>
+                          <option value="2008">2008</option>
+                          <option value="2009">2009</option>
+                          <option value="2010">2010</option>
+                          <option value="2011">2011</option>
+                          <option value="2012">2012</option>
                         </select>
                       </div>
                     </div>
