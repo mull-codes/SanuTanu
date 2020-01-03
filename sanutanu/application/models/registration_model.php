@@ -22,7 +22,9 @@ class Registration_Model extends CI_Model  {
     		'user_created_date' => date("Y-m-d"),
     	);
     	if($signup_array){
-    		$this->db->insert('tbl_users' ,$signup_array );
+            $this->session->set_userdata("signup_array", $signup_array);
+            print_r($this->session->userdata("signup_array"));
+    		//$this->db->insert('tbl_users' ,$signup_array );
     	}
     }
 
@@ -31,12 +33,13 @@ class Registration_Model extends CI_Model  {
         $user_password = md5($this->input->post('user_password'));
         $this->session->set_userdata('email',$user_email);
         $this->session->set_userdata('password',$user_password);
-        $this->db->select("user_first_name,user_last_name,user_date_of_birth,user_gender,user_email,user_password")
+        $this->db->select("user_id,user_first_name,user_last_name,user_date_of_birth,user_gender,user_email,user_password")
                 ->from("tbl_users")
                 ->where(array("user_email" => $user_email,"user_password" => $user_password));
         $user_data = $this->db->get()->result_array();
         if($user_data){
             $this->session->set_userdata('logged_in',"logged_in");
+            $this->session->set_userdata('user_id',$user_data[0]['user_id']);
             $this->session->set_userdata('first_name',$user_data[0]['user_first_name']);
             $this->session->set_userdata('last_name',$user_data[0]['user_last_name']);
             $this->session->set_userdata('date_of_birth',$user_data[0]['user_date_of_birth']);

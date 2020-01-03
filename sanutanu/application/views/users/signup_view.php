@@ -44,7 +44,7 @@
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
-                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data-toggle="popover" data-content="What's your email?" placeholder="Your Email"/>
+                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data-toggle="popover" data-content="What's your email or mobile?" placeholder="Your Email or Mobile Number"/>
                       </div>
                     </div>
                     <div class="row">

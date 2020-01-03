@@ -3,14 +3,14 @@
       <!-- Timeline
       ================================================= -->
       <div class="timeline">
-        <div class="timeline-cover">
+        <div class="timeline-cover" id="timeline_cover" onclick="edit_profile_picture(this.id)">
 
           <!--Timeline Menu for Large Screens-->
           <div class="timeline-nav-bar hidden-sm hidden-xs">
             <div class="row">
               <div class="col-md-3">
                 <div class="profile-info">
-                  <img src="http://placehold.it/300x300" alt="" class="img-responsive profile-photo" />
+                  <img src="<?php echo base_url('assets/images/background_image.png'); ?>" alt="" class="img-responsive profile-photo" id="timeline_profile_cover" />
                   <h3>Sarah Cruiz</h3>
                   <p class="text-muted">Creative Director</p>
                 </div>

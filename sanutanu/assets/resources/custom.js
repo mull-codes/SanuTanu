@@ -90,3 +90,15 @@ function login_submit(form_id){
 		}
 	});
 }
+
+function edit_profile_picture(id){
+	$.ajax({
+		type:"post",
+		url: base_url+"index.php/users/userprofile/edit_profile_cover",
+		data:{"id":"cover"},
+		success:function(res){
+			$('.timeline-cover').css({"background-image": "<?php echo base_url('assets/images/background_image.png'); ?>", "color": "red !important"});
+            console.log("ok2!");
+		}
+	});
+}
