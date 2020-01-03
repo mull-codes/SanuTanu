@@ -9,6 +9,20 @@ class Home extends CI_Controller {
     }
 
     public function index(){
-    	$this->load->view('users/signup_view');
+    	if($this->session->userdata("logged_in") == "logged_in"){
+    	 	redirect(base_url().'index.php/home/login' , 'refresh');
+    	}
+    	$this->load->view('users/signup_view');	
     }
+
+    public function login(){
+    	if($this->session->userdata("logged_in") != "logged_in"){
+    	 	redirect(base_url().'index.php/home' , 'refresh');
+    	}
+    	$this->load->view('users/timeline_view');
+    	//$this->session->sess_destroy();
+    	
+    }
+
+    
 }
