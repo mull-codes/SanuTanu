@@ -5,7 +5,7 @@
     <div class="row" id="frinds_suggestion_row_head">
       <div class="col-sm-11"></div>
       <div class="col-sm-1">
-        <a href="<?php //echo base_url(""); ?>" id="btn_next" class="btn">Next</a>
+        <a href="<?php echo base_url("index.php/profile/profiles/edit_profile_pic_suggestion"); ?>" id="btn_next" class="btn">Next</a>
       </div>
     </div>
     <!-- end header div -->

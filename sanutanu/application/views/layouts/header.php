@@ -21,6 +21,32 @@
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
     <!--Favicon-->
     <link rel="shortcut icon" type="image/png" href="<?=base_url()?>assets/images/fav.png"/>
+
+    <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/bootstrap-3.min.css">
+  <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/croppie.css">
+  <style>.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.btn {
+  border: 2px solid #bf4ef3;
+  color: #bf4ef3;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}</style>
   </head>
   <body>
 
