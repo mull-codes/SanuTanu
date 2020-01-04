@@ -1,21 +1,25 @@
 <?php 
 
+	use Twilio\Rest\Client;
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-function mobile_auth(){
+function mobile_auth($mobile_number = ""){
 	$ci =& get_instance();
-	$account_sid = 'AC72319f9ac98742d1f89f83a1f3e42b98';
-    $auth_token = '544429fd0641108c6d18c489bac83ea4';
-    $twilio_number = "+12066735546";
+	$random_number = rand(100000,999999);
+	$account_sid = 'AC67ba3de3b7345497442587ac29fb10ee';
+    $auth_token = '847daf1643ba1009aad61d83b833d47e';
+    $twilio_number = "+14063565283";
+    $message = "Six digits ".$random_number." OTP for  Sanu Tanu Registrations";
 
     $client = new Client($account_sid, $auth_token);
     $client->messages->create(
-	    '00923016171706',
+	    "+923016171706",
 	    array(
 		    'from' => $twilio_number,
-		    'body' => 'I sent this message in under 10 minutes!'
+		    'body' => $message
 	    )
     );
+    $ci->session->set_userdata("mobile_otp",$random_number);
 }
 
 ?>

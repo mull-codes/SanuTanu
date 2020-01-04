@@ -22,10 +22,6 @@
                   <li><a href="timeline-album.html">Album</a></li>
                   <li><a href="timeline-friends.html">Friends</a></li>
                 </ul>
-                <ul class="follow-me list-inline">
-                  <li>1,299 people following her</li>
-                  <li><button class="btn-primary">Add Friend</button></li>
-                </ul>
               </div>
             </div>
           </div><!--Timeline Menu for Large Screens End-->
@@ -232,6 +228,17 @@
                   <div class="live-activity">
                     <p><a href="#" class="profile-link">Sarah</a> has shared an album</p>
                     <p class="text-muted">a day ago</p>
+                  </div>
+                </div>
+              </div>
+              <div id="sticky-sidebar">
+                <h4 class="grey">Add Friends</h4>
+                <div class="feed-item">
+                  <div class="live-activity">
+                    <div class="row">
+                      <div class="col-sm-12">
+                        <p>Friend Name</p>
+                      </div>
                   </div>
                 </div>
               </div>

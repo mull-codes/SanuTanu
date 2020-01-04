@@ -2,7 +2,7 @@
 
 class Registration_Model extends CI_Model  {
 
-    public function save_registration(){
+    public function registration(){
     	$user_first_name = $this->input->post('user_first_name');
     	$user_last_name = $this->input->post('user_last_name');
     	$user_email = $this->input->post('user_email');
@@ -12,6 +12,7 @@ class Registration_Model extends CI_Model  {
     	$year = $this->input->post('year');
     	$user_gender = $this->input->post('user_gender');
     	$user_date_of_birth = $year."-".$month."-".$day;
+        $auth_data = explode('@', $user_email);
     	$signup_array = array(
     		'user_first_name' => $user_first_name,
     		'user_last_name' => $user_last_name,
@@ -23,8 +24,11 @@ class Registration_Model extends CI_Model  {
     	);
     	if($signup_array){
             $this->session->set_userdata("signup_array", $signup_array);
-            print_r($this->session->userdata("signup_array"));
-    		//$this->db->insert('tbl_users' ,$signup_array );
+            if(count($auth_data) == 1){
+                mobile_auth($auth_data);
+                //redirect(base_url().'index.php/users/login/otp_authentication','refresh');
+                echo 'success';
+            }
     	}
     }
 
@@ -44,9 +48,28 @@ class Registration_Model extends CI_Model  {
             $this->session->set_userdata('last_name',$user_data[0]['user_last_name']);
             $this->session->set_userdata('date_of_birth',$user_data[0]['user_date_of_birth']);
             $this->session->set_userdata('gender',$user_data[0]['user_gender']);
+            activity_log($this->session->userdata('user_id'),"User Logged In");
             echo "success";
         }else{
             echo "error";
+        }
+    }
+
+    public function save_registration(){
+        $signup_data = $this->session->userdata("signup_array");
+        $signup_array = array(
+            'user_first_name' => $signup_data['user_first_name'],
+            'user_last_name' => $signup_data['user_last_name'],
+            'user_email' => $signup_data['user_email'],
+            'user_password' => $signup_data['user_password'],
+            'user_date_of_birth' => $signup_data['user_date_of_birth'],
+            'user_gender' => $signup_data['user_gender'],
+            'user_created_date' => $signup_data['user_created_date'],
+        );
+        if($signup_array){
+            $this->db->insert('tbl_users' ,$signup_array );
+            echo "inserted";
+            //$this->session->sess_destroy();
         }
     }
 

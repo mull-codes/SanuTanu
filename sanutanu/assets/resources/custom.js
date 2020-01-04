@@ -68,9 +68,10 @@ function ajaxSubmit(form_id,after_submit = ''){
 		url: base_url+form_action,
 		data:$("#"+form_id).serialize(),
 		success:function(res){
-			//$("#"+form_id).trigger("reset");
-			if(after_submit != ""){
-				alert(after_submit);
+			console.log(res);
+			if(res == "success"){
+				$("#"+form_id).trigger("reset");
+				window.location.href = base_url+"index.php/users/login/otp_authentication";
 			}
 		}
 	});
@@ -99,6 +100,27 @@ function edit_profile_picture(id){
 		success:function(res){
 			$('.timeline-cover').css({"background-image": "<?php echo base_url('assets/images/background_image.png'); ?>", "color": "red !important"});
             console.log("ok2!");
+		}
+	});
+}
+
+function OtpValidation(){
+	$.ajax({
+		type:"post",
+		url: base_url+"index.php/users/login/save_registration",
+		data:$("#otp_form").serialize(),
+		success:function(res){
+			if(res == "inserted"){
+				var html = "<p style='font-size:15px;'>You have to successfully confirmed your account.</p>";
+				$("#m_body").html(html);
+				$('#myModal').modal('show');
+				window.location.href = base_url+"index.php/friends/friends/friends_suggestion";
+			}else{
+				var html = "<p style='font-size:15px;'>Please enter your otp again.</p>";
+				$("#m_body").html(html);
+				$('#myModal').modal('show');
+				$("#otp_form").trigger("reset");
+			}
 		}
 	});
 }

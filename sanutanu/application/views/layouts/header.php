@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="<?=base_url()?>assets/css/style.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/css/ionicons.min.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/resources/node_modules/sweetalert2/dist/sweetalert2.min.css" />
+    <link rel="stylesheet" href="<?=base_url()?>assets/resources/custom.css" />
     
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">

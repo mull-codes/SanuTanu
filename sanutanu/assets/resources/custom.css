@@ -1,0 +1,22 @@
+div#frinds_suggestion_row_head{
+	background: #FFF;
+	padding: 10px;
+	border-radius: 10px 10px 0 0;
+}
+
+div#frinds_suggestion_row_head a#btn_next{
+	background-color: #bf4ef3;
+	color:white;
+	margin-left: 5px;
+	margin-right: 5px;
+	text-decoration: none !important;
+}
+
+div#frinds_suggestion_row_body{
+	background: #FFF;
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+}
+div#frinds_suggestion_row_body div#heading_bottom{
+	border-bottom: 1px solid lightgray;
+}

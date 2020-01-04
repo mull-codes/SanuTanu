@@ -26,7 +26,7 @@
                   <h3>Register Now !!!</h3>
                   <p class="text-muted">Be cool and join today. Meet millions</p>
                   <!--Register Form-->
-                  <form name="registration_form" id='registration_form' method="post" class="form-inline" action="index.php/users/login/save_registration">
+                  <form name="registration_form" id='registration_form' method="post" class="form-inline" action="index.php/users/login/registration">
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
