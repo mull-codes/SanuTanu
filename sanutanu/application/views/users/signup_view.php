@@ -200,6 +200,7 @@
     <!-- Custome Fiels  -->
     <script src="<?=base_url()?>assets/resources/custom.js"></script>
     <script src="<?=base_url()?>assets/resources/js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="<?=base_url()?>assets/resources/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
   </body>
 </html>
  

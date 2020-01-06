@@ -48,7 +48,7 @@
         <div id="page-contents">
           <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-7">
+            <div class="col-md-6">
 
               <!-- Post Create Box
               ================================================= -->
@@ -203,7 +203,7 @@
               </div>
 
             </div>
-            <div class="col-md-2 static">
+            <div class="col-md-3 static">
               <div id="sticky-sidebar">
                 <h4 class="grey">Sarah's activity</h4>
                 <div class="feed-item">
@@ -237,7 +237,24 @@
                   <div class="live-activity">
                     <div class="row">
                       <div class="col-sm-12">
-                        <p>Friend Name</p>
+                        <?php $friends_list = add_friends();
+                          foreach ($friends_list as $friends) { ?>
+                            <div>
+                              <div class="row">
+                                <div class="col-sm-12">
+                                  <img src="<?php echo base_url('assets/images/background_image.png'); ?>" alt="Flowers in Chania" width="50" height="60">
+                                </div>
+                              </div>
+                              <div class="row">
+                                <div class="col-sm-6">
+                                  <p><?php echo $friends["user_first_name"]. " " .$friends["user_last_name"]; ?></p>
+                                </div>
+                                <div class="col-sm-6">
+                                  <button id="<?php echo $friends["user_id"]; ?>" class="btn btn-success" onclick="send_friend_request(this.id)">Add Friend</button>
+                                </div>
+                              </div>
+                            </div>
+                        <?php  } ?>
                       </div>
                   </div>
                 </div>

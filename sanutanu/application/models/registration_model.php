@@ -22,14 +22,20 @@ class Registration_Model extends CI_Model  {
     		'user_gender' => $user_gender,
     		'user_created_date' => date("Y-m-d"),
     	);
-    	if($signup_array){
+        $response = check_registration($user_email);
+        if($response == true){
+            if($signup_array){
             $this->session->set_userdata("signup_array", $signup_array);
             if(count($auth_data) == 1){
                 mobile_auth($auth_data);
                 //redirect(base_url().'index.php/users/login/otp_authentication','refresh');
                 echo 'success';
             }
-    	}
+        }
+        }else{
+            echo "exists";
+        }
+    	
     }
 
     public function user_login(){
