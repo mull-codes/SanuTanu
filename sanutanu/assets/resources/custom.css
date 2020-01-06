@@ -32,3 +32,14 @@ div#frinds_suggestion_row_body div#heading_bottom{
 .active {
     color: rgb(164, 27, 227) !important;
 }
+#ul
+{
+	    height: 40px;
+    width: 81px;
+    margin-top: 4px;
+      border-radius: 50%;
+    margin-left: 15px;
+}
+#li{
+    margin-top: 14px;
+}
