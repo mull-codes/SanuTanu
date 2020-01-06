@@ -30,11 +30,11 @@
                     <div class="row">
                       <div class="form-group col-xs-6">
                         <label for="firstname" class="sr-only">First Name</label>
-                        <input id="user_first_name" class="form-control input-group-lg" type="text" name="user_first_name"  placeholder="First name"  data-toggle="popover" data-content="What's your name?"/>
+                        <input id="user_first_name" class="form-control input-group-lg" type="text" name="user_first_name"  placeholder="First name" data-placement="left"  data-toggle="popover" data-content="What's your name?"/>
                       </div>
                       <div class="form-group col-xs-6">
                         <label for="lastname" class="sr-only">Last Name</label>
-                        <input id="user_last_name" class="form-control input-group-lg" type="text" name="user_last_name" placeholder="Last name" data-toggle="popover" data-content="What's your last name?"/>
+                        <input id="user_last_name" data-placement="top" class="form-control input-group-lg" type="text" name="user_last_name" placeholder="Last name" data-toggle="popover" data-content="What's your last name?"/>
                       </div>
                       <!-- <div class="form-group col-xs-12">
                         <label for="phoneNo" class="sr-only">Mobile Number</label>
@@ -44,17 +44,17 @@
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="email" class="sr-only">Email</label>
-                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data-toggle="popover" data-content="What's your email or mobile?" placeholder="Your Email or Mobile Number"/>
+                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" data-toggle="popover"data-placement="left" data-content="What's your email or mobile?" placeholder="Your Email or Mobile Number"/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="password" class="sr-only">Password</label>
-                        <input id="user_password" class="form-control input-group-lg" type="password" name="user_password" data-toggle="popover" data-content="Please enter your 6 digits password" placeholder="Password"/>
+                        <input id="user_password" data-placement="left" class="form-control input-group-lg" type="password" name="user_password" data-toggle="popover" data-content="Please enter your 6 digits password" placeholder="Password"/>
                       </div>
                     </div>
                     <div class="row">
-                      <p class="birth"><strong>Date of Birth</strong></p>
+                       <div id="DateOfbirth" data-placement="left"  data-toggle="popover" data-content="What is your date of birth?">
                       <div class="form-group col-sm-3 col-xs-6">
                         <label for="month" class="sr-only"></label>
                         <select class="form-control" id="day" name="day">
@@ -112,7 +112,7 @@
                       </div>
                       <div class="form-group col-sm-6 col-xs-12">
                         <label for="year" class="sr-only"></label>
-                        <select class="form-control" id="year" name="year"  data-toggle="popover" data-content="What is your date of birth?">
+                        <select class="form-control" id="year" name="year">
                           <option value="" disabled selected>Year</option>
                           <option value="2000">2000</option>
                           <option value="2001">2001</option>
@@ -127,6 +127,7 @@
                           <option value="2011">2011</option>
                           <option value="2012">2012</option>
                         </select>
+                      </div>
                       </div>
                     </div>
                     <div class="form-group gender">
@@ -152,13 +153,13 @@
                      <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="my-email" class="sr-only">Email</label>
-                        <input id="user_email" class="form-control input-group-lg" type="text" name="user_email" title="Enter Email" placeholder="Your Email"/>
+                        <input id="user_email_login"  data-placement="left"  data-toggle="popover" data-content="What is your Email?" class="form-control input-group-lg Remove" type="text" name="user_email" placeholder="Your Email"/>
                       </div>
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
                         <label for="my-password" class="sr-only">Password</label>
-                        <input id="user_password" class="form-control input-group-lg" type="password" name="user_password" title="Enter password" placeholder="Password"/>
+                        <input id="user_password_login"  data-placement="left"  data-toggle="popover" data-content="What is your Password" class="form-control input-group-lg Remove" type="password" name="user_password"  placeholder="Password"/>
                       </div>
                     </div>
                   </form><!--Login Form Ends--> 

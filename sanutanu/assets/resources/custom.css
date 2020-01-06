@@ -20,3 +20,12 @@ div#frinds_suggestion_row_body{
 div#frinds_suggestion_row_body div#heading_bottom{
 	border-bottom: 1px solid lightgray;
 }
+.popover{
+  background: rgb(163, 138, 158);
+  text-align: center;
+  color:white;
+}
+.Remove
+{
+	border-radius: 25px;
+}
