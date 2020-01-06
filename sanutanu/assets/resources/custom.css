@@ -29,3 +29,6 @@ div#frinds_suggestion_row_body div#heading_bottom{
 {
 	border-radius: 25px;
 }
+.active {
+    color: rgb(164, 27, 227) !important;
+}
