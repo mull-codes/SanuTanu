@@ -5,7 +5,7 @@
     <div class="row" id="frinds_suggestion_row_head">
       <div class="col-sm-11"></div>
       <div class="col-sm-1">
-        <a href="<?php //echo base_url(""); ?>" id="btn_next" class="btn">Next</a>
+        <a href="<?php echo base_url("profile/profiles/profile_image_sugges"); ?>" id="btn_next" class="btn">Next</a>
       </div>
     </div>
     <!-- end header div -->
@@ -45,3 +45,4 @@
     <script src="<?=base_url()?>assets/resources/js/node_modules/jquery-validation/dist/jquery.validate.min.js"></script>
   </body>
 </html>
+styl

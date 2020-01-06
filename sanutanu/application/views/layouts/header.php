@@ -16,7 +16,9 @@
     <link rel="stylesheet" href="<?=base_url()?>assets/css/font-awesome.min.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/resources/node_modules/sweetalert2/dist/sweetalert2.min.css" />
     <link rel="stylesheet" href="<?=base_url()?>assets/resources/custom.css" />
-    
+    <!-- Profile Image Sugges -->
+    <!-- <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/bootstrap-3.min.css"> -->
+    <link rel="stylesheet" href="http://demo.itsolutionstuff.com/plugin/croppie.css">
     <!--Google Font-->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,700i" rel="stylesheet">
     <!--Favicon-->

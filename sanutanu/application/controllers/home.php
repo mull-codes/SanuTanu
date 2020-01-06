@@ -20,7 +20,7 @@ class Home extends CI_Controller {
     	 	redirect(base_url().'index.php/home' , 'refresh');
     	}
     	$this->load->view('users/timeline_view');
-    	//$this->session->sess_destroy();
+    	// $this->session->sess_destroy();
     	
     }
 
