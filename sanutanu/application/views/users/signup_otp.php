@@ -8,8 +8,10 @@
             <div >
                 <h6>Let us know if this  mobile number belongs to you.Enetr the code in the SMS sent to </h6><span></span>
             </div>
-            <div class="form-group row"style="margin-left:0px;">
-                <label for="again_send" class="col-form-label">ST-</label>
+            <div class="form-group row">
+                <div class="col-sm-1" >
+                  <label for="again_send" class="col-form-label">ST-</label>
+                </div>
                 <div class="col-sm-3">
                     <input type="text" class="form-control" name="otpnumber" id="otpnumber" placeholder="OTP"/>
                     <div id="msg"></div>
