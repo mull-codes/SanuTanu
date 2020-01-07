@@ -22,4 +22,17 @@ function mobile_auth($mobile_number = ""){
     $ci->session->set_userdata("mobile_otp",$random_number);
 }
 
+function check_registration($user_name = ''){
+	$ci =& get_instance();
+	$ci->db->select("user_email");
+	$ci->db->from("tbl_users");
+	$ci->db->where("user_email",$user_name);
+	$data = $ci->db->get()->result_array();
+	if($data){
+		return false;
+	}else{
+		return true;
+	}
+}
+
 ?>

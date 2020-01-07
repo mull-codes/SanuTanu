@@ -22,4 +22,4 @@ class UserProfile extends CI_Controller {
         $image_type = $_POST['id'];
         $this->profile->profile_cover($image_type);
     }
-}
+}   
