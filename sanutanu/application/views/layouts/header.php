@@ -104,48 +104,86 @@
               </li>
               <li class="dropdown"><a href="contact.html"onMouseOut="this.style.color='#ffffff'" onMouseOver="this.style.color='rgb(164, 27, 227)'" >Contact</a></li>
               <li class="dropdown"><span class=" glyphicon glyphicon-bell dropdown-toggle" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"style="font-size: 20px;margin-top: 16px;color: #fff;"></span>
-                 <ul class="dropdown-menu" style="width: 392px;">
-                   <li>
+                 <ul class="dropdown-menu" style="width: 220px; background-color: #fff">
+                  <h3 style="margin-left: 42px;">Notification</h3>
+                   <li style="border-bottom-color: #daaef1">
                     <div class="row">
-                     <div class="col-lg-4">
-                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
-                     </div>
-                     <div class="col-lg-4" id="li">
-                      <p>hello from pakistan</p>
+                     <div class="col-lg-8" id="li">
+                      <p style="float: right;">hello from pakistan</p>
+                      <h6 style="margin-left: 23px;margin-top: -13px;">an hour ago</h6>
                     </div>
-                   </div></li>
-                 <li>
-                  <div class="row">
-                     <div class="col-lg-4">
+                    <div class="col-lg-4">
                       <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
                      </div>
-                     <div class="col-lg-4" id="li">
-                      <p>hello ......</p>
                    </div>
-                 </div>
+                 </li>
+                 <li style="border-bottom-color: #daaef1">
+                    <div class="row">
+                     <div class="col-lg-8" id="li">
+                      <p style="float: right;">hello from pakistan</p>
+                      <h6 style="margin-left: 23px;margin-top: -13px;">an hour ago</h6>
+                    </div>
+                    <div class="col-lg-4">
+                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
+                     </div>
+                   </div>
                  </li>
                  </ul>
               </li>
               <li class="dropdown" style="margin-left: 15px;"><span class=" fas dropdown-toggle" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"style="font-size: 20px;margin-top: 16px;color: #fff;">&#xf075;</span>
-                 <ul class="dropdown-menu" style="width: 392px;">
-                   <li>
+                  <ul class="dropdown-menu" style="width: 220px; background-color: #fff">
+                  <h3 style="margin-left: 42px;">Messeges</h3>
+                   <li style="border-bottom-color: #daaef1">
                     <div class="row">
-                     <div class="col-lg-4">
-                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
-                     </div>
-                     <div class="col-lg-4" id="li">
-                      <p>hello from pakistan</p>
+                     <div class="col-lg-8" id="li">
+                      <p style="float: right;">hello from pakistan</p>
+                     <h6 style="margin-left: 23px;margin-top: -13px;">an hour ago</h6>
                     </div>
-                   </div></li>
-                 <li>
-                  <div class="row">
-                     <div class="col-lg-4">
+                    <div class="col-lg-4">
                       <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
                      </div>
-                     <div class="col-lg-4" id="li">
-                      <p>hello ......</p>
                    </div>
-                 </div>
+                 </li>
+                 <li style="border-bottom-color: #daaef1">
+                    <div class="row">
+                     <div class="col-lg-8" id="li">
+                      <p style="float: right;">hello from pakistan</p>
+                      <h6 style="margin-left: 23px;margin-top: -13px;">an hour ago</h6>
+                    </div>
+                    <div class="col-lg-4">
+                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
+                     </div>
+                   </div>
+                 </li>
+                 </ul>
+              </li>
+              <li class="dropdown" style="margin-left: 15px;"><span class=" glyphicon glyphicon-chevron-down dropdown-toggle" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"style="font-size: 12px;margin-top: 20px;color: #fff;"></span>
+                  <ul class="dropdown-menu" style="border-radius: 20px 20px 0px 0px;width: 300px; background-color: #fff">
+                   <li style="border-bottom-color: #daaef1">
+                    <div class="row">
+                     <div class="col-lg-12">
+                      <div class="row">
+                          <img style="margin-left: 12px; height: 83px;width: 296px;border-radius: 25px 25px 0px 0px;margin-top: -4px;"src="<?=base_url()?>assets/images/images9.jpg"> 
+                      </div>
+                      <div class="row">
+                          <img class="Center" src="<?=base_url()?>assets/images/images9.jpg"> 
+                      </div>
+                      <div class="row">
+                         <h4 style="margin-left: 112px;">Bilal Waheed</h4>
+                      </div>
+                      <div class="row"style=" margin-left: -97px;display:flex; justify-content:space-between; align-items:baseline;">
+                        <span class="glyphicon glyphicon-cog"></span><h5 style="margin-left: -112px">Settings & Privecy</h5>
+                      </div>
+                      
+                      <div class="row"style=" margin-left: -107px;display:flex; justify-content:space-between; align-items:baseline;">
+                        <span class=" glyphicon glyphicon-question-sign"></span><h5 style="margin-left: -112px">Help & Support</h5>
+                      </div>
+                      <div class="row"style=" margin-left: -128px;display:flex; justify-content:space-between; align-items:baseline;">
+                        <span class="glyphicon glyphicon-log-out"></span><h5 style="margin-left: -112px">Log out</h5>
+                      </div>
+                    </div>
+                   
+                   </div>
                  </li>
                  </ul>
               </li>
