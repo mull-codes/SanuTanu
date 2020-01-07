@@ -34,12 +34,21 @@ div#frinds_suggestion_row_body div#heading_bottom{
 }
 #ul
 {
-	    height: 40px;
-    width: 81px;
+	    
+   height: 40px;
+    width: 44px;
     margin-top: 4px;
-      border-radius: 50%;
+    border-radius: 50%;
     margin-left: 15px;
 }
 #li{
     margin-top: 14px;
+}
+.Center
+{
+	border-radius: 50%;
+    width: 61px;
+    height: 55px;
+    margin-top: -37px;
+    margin-left: 132px;
 }
