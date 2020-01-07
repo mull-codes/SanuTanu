@@ -25,7 +25,26 @@
         </div>
         <!-- end heading-->
         <!-- Start friends list working -->
-
+        <div id="friend_scrol">
+          <?php $friends_list = friend_suggestion(); 
+            foreach ($friends_list as $friends) { ?>
+              <div class="row" id="friends_row">
+                <div class="col-sm-2">
+                  <img src="<?php echo base_url('assets/images/background_image.png'); ?>" height="70" width="60">
+                </div>
+                <div class="col-sm-6">
+                  <p><?php echo $friends['user_first_name']." ".$friends['user_last_name']; ?></p>
+                </div>
+                <div class="col-sm-2">
+                  <button class="btn btn-success">Add Friend</button>
+                </div>
+                <div class="col-sm-2">
+                  <button class="btn btn-default">Remove</button>
+                </div>
+              </div>
+              
+          <?php } ?>
+        </div>
         <!-- end friends list working -->
       </div>
     </div>

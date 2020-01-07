@@ -187,6 +187,13 @@
                  </li>
                  </ul>
               </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle pages"onMouseOut="this.style.color='#ffffff'" onMouseOver="this.style.color='rgb(164, 27, 227)'" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  <i class="fa fa-angle-down" aria-hidden="true" style="color:#FFF; font-size: 15px;"></i></a>
+                <ul class="dropdown-menu page-list">
+                  <li><a href="<?php echo base_url('index.php/home/logout'); ?>">Logout</a></li>
+                </ul>
+              </li>
             </ul>
             <form class="navbar-form navbar-right hidden-sm">
               <div class="form-group">

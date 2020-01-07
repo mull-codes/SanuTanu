@@ -74,6 +74,8 @@ class Registration_Model extends CI_Model  {
         );
         if($signup_array){
             $this->db->insert('tbl_users' ,$signup_array );
+            $last_id = $this->db->insert_id();
+            $this->session->set_userdata("user_id", $last_id);
             echo "inserted";
             //$this->session->sess_destroy();
         }

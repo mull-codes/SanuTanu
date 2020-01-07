@@ -43,4 +43,14 @@ function add_friends($friend_id = ""){
 	// $ci->db->get()->result_array();
 }
 
+function friend_suggestion(){
+	$ci =& get_instance();
+	$current_user_id = $ci->session->userdata("user_id");
+	$ci->db->select("*")
+		->from("tbl_users")
+		->where("user_id !=",$current_user_id);
+	$data = $ci->db->get()->result_array();
+	return $data;
+}
+
 ?>
