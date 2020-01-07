@@ -1,30 +1,32 @@
 
 <!-- Strat Container -->
 <div class="container" style="width:50%;margin-top:10%;margin-left:25%; background-color: rgb(231, 180, 231);" >
-	
-	<div class="row">
-	    <div class="col-sm-10"><h3>Upload a Photo of Yourself</h3></div><div class="col-sm-2"><a href="<?php echo base_url("index.php/home/login") ?>" style="text-decoration: none;color:#bf4ef3"><h3>Skip</h3></a></div>
-	</div>
-	  <div style="justify-content: flex-end;padding: .75rem;border-top: 1px solid #bf4ef3;"></div>
-	  <div class="panel-body" >
-	  	<div class="row">
-	  		<div class="col-md-4 text-center">
-				<div id="upload-demo" style="width:350px"></div>
-	  		</div>
-	  		</div>
-			  <div style="justify-content: flex-end;padding: .75rem;border-top: 1px solid #bf4ef3;"></div>
-			  <div class="row" style="display:flex; justify-content: flex-end;">
-			  <div class="upload-btn-wrapper">
-				<button class="btn">Upload Image</button>
-				<input type="file" id="upload" class="btn" value="Next" style="background-color: #bf4ef3;">
-			</div>
-			  <button class="btn  upload-result" style="margin-left: 5px;">Done</button>
-		</div>
-			  
-	  	</div>
-      
-	  </div>
-	
+    <!-- Start Form -->
+    <form action="" mathod="POST" id="imageForm" enctype="multipart/form-data">
+        <div class="row">
+            <div class="col-sm-10"><h3>Upload a Photo of Yourself</h3></div><div class="col-sm-2"><a href="<?php echo base_url("index.php/home/login") ?>" style="text-decoration: none;color:#bf4ef3"><h3>Skip</h3></a></div>
+        </div>
+        <div style="justify-content: flex-end;padding: .75rem;border-top: 1px solid #bf4ef3;"></div>
+        <div class="panel-body" >
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <div id="upload-demo" style="width:350px"></div>
+                </div>
+                </div>
+                <div style="justify-content: flex-end;padding: .75rem;border-top: 1px solid #bf4ef3;"></div>
+                <div class="row" style="display:flex; justify-content: flex-end;">
+                <div class="upload-btn-wrapper">
+                    <button class="btn" >Upload Image</button>
+                    <input type="file" name="image" id="upload" class="btn" value="Next" style="background-color: #bf4ef3;">
+                </div>
+                <button type="submit" class="btn  upload-result" style="margin-left: 5px;">Done</button>
+            </div>
+                
+            </div>
+        
+        </div>
+    <form>
+      <!-- End Form -->
 </div>
 <!-- End Container -->
     <!-- Scripts
@@ -68,18 +70,22 @@
         reader.readAsDataURL(this.files[0]);
     });   
     $('.upload-result').on('click', function (ev) {
+        ev.preventDefault();
         $uploadCrop.croppie('result', {
             type: 'canvas',
             size: 'viewport'
         }).then(function (resp) {
-        
+            let image=$("#image").val();
             $.ajax({
-                url: "profile_image_sugges",
+                url: "<?php echo base_url("profile/profiles/profile_image_save"); ?>",
                 type: "POST",
-                data: {"image":resp},
+                datatype:"json",
+                data:{"image":resp},
+                //$("#imageForm").serialize(), 
                 success: function (data) {
                     html = '<img src="' + resp + '" />';
                     $("#upload-demo").html(html);
+                    
                 }
             });
         });
