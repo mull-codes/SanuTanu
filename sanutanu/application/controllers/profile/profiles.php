@@ -11,8 +11,6 @@ class Profiles extends CI_Controller {
     {
         $this->load->view('layouts/header');
         $this->load->view('profile/profile_image_sugges');
-        
-        
     }
 
 }

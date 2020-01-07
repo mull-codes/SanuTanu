@@ -43,3 +43,25 @@ div#frinds_suggestion_row_body div#heading_bottom{
 #li{
     margin-top: 14px;
 }
+#friends_row{
+	border-bottom: 1px solid lightgray;
+	padding: 5px;
+}
+
+#friends_row .col-sm-6 p{
+	font-size: 20px;
+	vertical-align: text-bottom;
+	margin: 0;
+	padding: 30px 10px 10px 10px;
+}
+#friends_row .col-sm-6{
+	height: 70px;
+}
+#friends_row .col-sm-2 button{
+	margin: 20px 10px 10px 10px;
+	width: 110px;
+}
+div#frinds_suggestion_row_body div#friend_scrol{
+	height: 610px;
+	overflow: auto;
+}
