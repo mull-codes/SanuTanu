@@ -129,12 +129,17 @@ function OtpValidation(){
 
 function send_friend_request(id){
 	if(id){
+		
 		$.ajax({
 			type: "POST",
 			url: base_url + "index.php/friends/friends/friend_requests",
 			data: {"id":id},
 			success:function(res){
-
+				if(res == "requested"){
+					$("button#"+id).html("Cancel");
+					$("button#"+id).removeClass("btn-success");
+					$("button#"+id).addClass("btn-default");
+				}
 			}
 		});
 	}

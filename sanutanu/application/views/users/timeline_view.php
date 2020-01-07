@@ -237,8 +237,10 @@
                   <div class="live-activity">
                     <div class="row">
                       <div class="col-sm-12">
-                        <?php $friends_list = add_friends();
-                          foreach ($friends_list as $friends) { ?>
+                        <!-- <?php $users_list = all_users();
+                          foreach ($users_list as $users) {
+                            add_friends($users["user_id"]);
+                           ?>
                             <div>
                               <div class="row">
                                 <div class="col-sm-12">
@@ -247,14 +249,14 @@
                               </div>
                               <div class="row">
                                 <div class="col-sm-6">
-                                  <p><?php echo $friends["user_first_name"]. " " .$friends["user_last_name"]; ?></p>
+                                  <p><?php echo $users["user_first_name"]. " " .$users["user_last_name"]; ?></p>
                                 </div>
                                 <div class="col-sm-6">
-                                  <button id="<?php echo $friends["user_id"]; ?>" class="btn btn-success" onclick="send_friend_request(this.id)">Add Friend</button>
+                                  <button style="width: 100px;" id="<?php echo $users["user_id"]; ?>" class="btn btn-success" onclick="send_friend_request(this.id)">Add Friend</button>
                                 </div>
                               </div>
                             </div>
-                        <?php  } ?>
+                        <?php  } ?> -->
                       </div>
                   </div>
                 </div>

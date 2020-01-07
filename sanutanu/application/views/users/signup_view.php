@@ -36,10 +36,6 @@
                         <label for="lastname" class="sr-only">Last Name</label>
                         <input id="user_last_name" class="form-control input-group-lg" type="text" name="user_last_name" placeholder="Last name" data-toggle="popover" data-content="What's your last name?"/>
                       </div>
-                      <!-- <div class="form-group col-xs-12">
-                        <label for="phoneNo" class="sr-only">Mobile Number</label>
-                        <input id="user_phone" class="form-control input-group-lg" type="text" name="user_phone" placeholder="Mobile Number" data-toggle="popover" data-content="What's your mobile number?"/>
-                      </div> -->
                     </div>
                     <div class="row">
                       <div class="form-group col-xs-12">
