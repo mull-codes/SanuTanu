@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is social network html5 template available in themeforest......" />
     <meta name="keywords" content="Social Network, Social Media, Make Friends, Newsfeed, Profile Page" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <meta name="robots" content="index, follow" />
     <title>SanuTanu</title>
 
@@ -102,6 +103,52 @@
                 </ul>
               </li>
               <li class="dropdown"><a href="contact.html"onMouseOut="this.style.color='#ffffff'" onMouseOver="this.style.color='rgb(164, 27, 227)'" >Contact</a></li>
+              <li class="dropdown"><span class=" glyphicon glyphicon-bell dropdown-toggle" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"style="font-size: 20px;margin-top: 16px;color: #fff;"></span>
+                 <ul class="dropdown-menu" style="width: 392px;">
+                   <li>
+                    <div class="row">
+                     <div class="col-lg-4">
+                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
+                     </div>
+                     <div class="col-lg-4" id="li">
+                      <p>hello from pakistan</p>
+                    </div>
+                   </div></li>
+                 <li>
+                  <div class="row">
+                     <div class="col-lg-4">
+                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
+                     </div>
+                     <div class="col-lg-4" id="li">
+                      <p>hello ......</p>
+                   </div>
+                 </div>
+                 </li>
+                 </ul>
+              </li>
+              <li class="dropdown" style="margin-left: 15px;"><span class=" fas dropdown-toggle" data-toggle="dropdown"role="button" aria-haspopup="true" aria-expanded="false"style="font-size: 20px;margin-top: 16px;color: #fff;">&#xf075;</span>
+                 <ul class="dropdown-menu" style="width: 392px;">
+                   <li>
+                    <div class="row">
+                     <div class="col-lg-4">
+                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
+                     </div>
+                     <div class="col-lg-4" id="li">
+                      <p>hello from pakistan</p>
+                    </div>
+                   </div></li>
+                 <li>
+                  <div class="row">
+                     <div class="col-lg-4">
+                      <img id="ul" src="<?=base_url()?>assets/images/images9.jpg">
+                     </div>
+                     <div class="col-lg-4" id="li">
+                      <p>hello ......</p>
+                   </div>
+                 </div>
+                 </li>
+                 </ul>
+              </li>
             </ul>
             <form class="navbar-form navbar-right hidden-sm">
               <div class="form-group">

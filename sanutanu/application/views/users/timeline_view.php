@@ -6,7 +6,7 @@
         <div class="timeline-cover" id="timeline_cover" onclick="edit_profile_picture(this.id)">
 
           <!--Timeline Menu for Large Screens-->
-          <div class="timeline-nav-bar hidden-sm hidden-xs">
+          <div class="timeline-nav-bar hidden-sm hidden-xs" style="background-color: #ca92e680;">
             <div class="row">
               <div class="col-md-3">
                 <div class="profile-info">
@@ -17,10 +17,10 @@
               </div>
               <div class="col-md-9">
                 <ul class="list-inline profile-menu">
-                  <li><a href="timeline.html" class="active">Timeline</a></li>
-                  <li><a href="timeline-about.html">About</a></li>
-                  <li><a href="timeline-album.html">Album</a></li>
-                  <li><a href="timeline-friends.html">Friends</a></li>
+                  <li><a href="timeline.html" onMouseOver="this.style.color='rgb(164, 27, 227)'" onMouseOut="this.style.color='#ffffff'" class="active" >Timeline</a></li>
+                  <li><a href="timeline-about.html" onMouseOver="this.style.color='rgb(164, 27, 227)'" onMouseOut="this.style.color='#ffffff'">About</a></li>
+                  <li><a href="timeline-album.html" onMouseOver="this.style.color='rgb(164, 27, 227)'" onMouseOut="this.style.color='#ffffff'">Album</a></li>
+                  <li><a href="timeline-friends.html" onMouseOver="this.style.color='rgb(164, 27, 227)'" onMouseOut="this.style.color='#ffffff'">Friends</a></li>
                 </ul>
               </div>
             </div>
